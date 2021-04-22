@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main-css.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/ef3db5a6d8.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
@@ -15,90 +15,165 @@
 <body>
     <div id="container">
         <div class="intro">
-            <img src="/images/photo bis.jpg" alt="photo de profil" id="photo">
+            <img src="/images/photo-bis.jpg" alt="photo de profil" id="photo">
             <div>
                 <p>Nathalie Barruel,<br /> Développeuse web front-end.</p>
             </div>
             <div id="menu">
-                <a href="#article-intro" class="menu-links" onclick="openArticleOne()">
-                    <div id="introduction" class="menu">Présentation</div>
+                <a href="#article-intro" class="menu-btn" onclick="openArticleOne()">
+                    <div id="introduction" class="menu noselect">Présentation</div>
                 </a>
-                <a href="#article-work" class="menu-links" onclick="openArticleTwo()">
-                    <div id="portfolio" class="menu">Mes réalisations</div>
+                <a href="#article-work" class="menu-btn" onclick="openArticleTwo()">
+                    <div id="portfolio" class="menu noselect">Mes réalisations</div>
                 </a>
-                <a href="#article-skills" class="menu-links" onclick="openArticleThree()">
-                    <div id="skills" class="menu">Mes compétences</div>
+                <a href="#article-skills" class="menu-btn" onclick="openArticleThree()">
+                    <div id="skills" class="menu noselect">Mes compétences</div>
                 </a>
-                <a href="#article-contact" class="menu-links" onclick="openArticleFour()">
-                    <div id="contact" class="menu">Recrutez-moi !</div>
+                <a href="#article-contact" class="menu-btn" onclick="openArticleFour()">
+                    <div id="contact" class="menu noselect">Recrutez-moi !</div>
                 </a>
             </div>
         </div>
+
         <!-- Main -->
         <div id="main">
-            
-
             <!-- Intro -->
             <article id="article-intro" class="intro overlay overlay-content">
                 <h2 class="major">Présentation</h2>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeArticleOne()">&times;</a>
-                <img src="images/intro1.png" alt="first banner" class="banner-image" />
+                <img src="images/about1.png" alt="first banner" class="banner-image" />
                 <p>Bienvenue sur mon site !</p>
                 <p>Je m'appelle Nathalie, j'ai 24 ans et je suis actuellement le parcours de développeur web
-                    chez Openclassrooms. Je suis à la recherche d'un alternance de 12 mois dans le cadre de ma formation.
+                    chez Openclassrooms.<br />Je suis à la recherche d'un alternance de 12 mois dans le cadre de ma
+                    formation.
                 </p>
+                <p>Comme la plupart des jeunes de mon âge j'ai eu beaucoup de mal à trouver ma voie et le métier de mes
+                    "rêves".<br />
+                    Après mon baccalauréat économique et social, j'ai souhaité approfondir mon intérêt pour les langues,
+                    la culture et l'histoire.<br />
+                    Je me suis donc inscrite à la fac pour faire une licence en Langues Étrangère Appliquées
+                    (L.E.A).<br />
+                    Après l'obtention de ma licence, j'ai voulu me réorienter vers mon passe-temps de toujours qui est
+                    l'informatique.<br />
+                    Je me suis donc renseignée sur les métiers possible dans ce domaine et c'est ainsi que j'ai
+                    découvert le métier de développeur.<br />
+                    J'ai de suite su que c'était le métier que je voulais faire !<br />
+                    J'ai donc passé plusieurs entretiens afin d'intégrer une formation de développeur, mais soit les
+                    dates étaient closent soit j'étais sur liste d'attente.<br />
+                    J'ai persévéré jusqu'à être admise chez Openclassrooms.<br /> Depuis, je poursuis ma formation.</p>
             </article>
 
             <!-- Work -->
             <article id="article-work" class="intro overlay overlay-content">
-                <h2 class="major">Mes réalisations <a href="javascript:void(0)" class="closebtn" onclick="closeArticleTwo()">&times;</a></h2>
+                <h2 class="major">Mes réalisations <a href="javascript:void(0)" class="closebtn"
+                        onclick="closeArticleTwo()">&times;</a></h2>
                 <img src="images/work1.png" alt="second banner" class="banner-image" />
-                <p><a href="https://nathbrl.github.io/nathaliebarruel_2_20082020/" target="_blank"><span class="projets">Réservia</span></a> est un site vitrine que j&#039ai réalisée from scratch uniquement en HTML 5 et CSS 3 dans le cadre de ma formation développeur web avec Openclassrooms.</p>
-                <p><a href="https://nathbrl.github.io/nathaliebarruel_3_04122020/" target="_blank"><span class="projets">Oh My Food</span></a> est un site vitrine que j&#039ai réalisée from scratch uniquement en HTML 5 et CSS 3 et Sass dans le cadre de ma formation développeur web avec Openclassrooms.</p>
-                <p><a href="https://nathbrl.github.io/nathaliebarruel_4_26012021/" target="_blank"><span class="projets">La Chouette Agence</span></a> dans le cadre de ma formation développeur web avec Openclassrooms.</p>
-                <p><a href="https://nathbrl.github.io/nathaliebarruel_5_28022021/" target="_blank"><span class="projets">Orinoco</span></a> dans le cadre de ma formation développeur web avec Openclassrooms.</p>
+                <p><a href="https://nathbrl.github.io/Personal-Website/" target="_blank"><span class="projets">Mon site
+                            web</span></a> réalisé avec <i class="fab fa-html5 work-icon"></i>,
+                    <i class="fab fa-css3-alt work-icon"></i> et <i class="fab fa-js work-icon"></i>.<br />
+                    Ce site s'améliore au fur et à mesure que je monte en compétences. Cette version est donc provisoire
+                    !. Ce site est réalisé en dehors de ma formation.
+                </p>
+                <p>
+                    <a href="https://nathbrl.github.io/nathaliebarruel_2_20082020/" target="_blank"><span
+                            class="projets">Réservia</span></a> est un site vitrine de réservation de vacances que j'ai
+                    codé from scratch
+                    uniquement en <i class="fab fa-html5 work-icon"></i> et <i class="fab fa-css3-alt work-icon"></i>.
+                    Ce projet a été effectué dans le cadre de ma formation développeur web avec Openclassrooms.
+                </p>
+                <p>
+                    <a href="https://nathbrl.github.io/nathaliebarruel_3_04122020/" target="_blank"><span
+                            class="projets">Oh My Food</span></a> est un site de commande de nourriture que j'ai codé
+                    from scratch uniquement
+                    en <i class="fab fa-html5 work-icon"></i> et <i class="fab fa-css3-alt work-icon"></i> et <i
+                        class="fab fa-sass work-icon"></i>. Les animations sont le netre de ce projet, le but était de
+                    le dynamiser
+                    et le rendre attractif. Ce projet a été développé dans le cadre de ma formation développeur web avec
+                    Openclassrooms.
+                </p>
+                <p>
+                    <a href="https://nathbrl.github.io/nathaliebarruel_4_26012021/" target="_blank"><span
+                            class="projets">La Chouette Agence</span></a> est le site d'une agence de design
+                    qui avait besoin d'une mise à jour au niveau SEO, de l'accessibilité de son site. Il fallait clean
+                    tout le code afin d'avoir un bon score lighthouse, enlever toutes les
+                    techniques de blackhat, vérifier les contrastes, et d'autres fonctionnalités qui affectaient les
+                    performances du site.
+                </p>
+                <p><a href="https://nathbrl.github.io/nathaliebarruel_5_28022021/" target="_blank"><span
+                            class="projets">Orinoco</span></a> est le projet que je réalise actuellement. C'est un site
+                    de e-commerce spécialisé
+                    dans la vente d'objets unique soit des caméras, des oursons en peluche ou des meubles. Ce projet est
+                    en cours de réalisation dans le cadre de ma formation développeur web avec Openclassrooms.</p>
             </article>
 
             <!-- About -->
             <article id="article-skills" class="intro overlay overlay-content">
                 <h2 class="major">Mes compétences</h2>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeArticleThree()">&times;</a>
-                <img src="images/about1.png" alt="third banner" class="banner-image" />
-                <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at
-                    eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et
-                    vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et
-                    malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis
-                    lorem ipsum dolor sit amet.</p>
+                <img src="images/intro1.png" alt="third banner" class="banner-image" />
+                <a href="CV.pdf" target="blank">Voir mon CV</a>
+                <p> le projet Réservia, j'ai acquis les compétences suivantes :</p>
+                <ul>
+                    <li>Mettre en place mon environnement front-end,</li>
+                    <li>Implémenter une interface responsive,</li>
+                    <li>Intégrer du contenu conformément à une maquette,</li>
+                    <li>Utiliser un système de gestion de versions pour suivre un projet et l'héberger.</li>
+                </ul>
+                <p>Avec le projet Oh My Food, j'ai validé les compétences suivantes :</p>
+                <ul>
+                    <li>Mettre en œuvre des effets CSS graphiques avancés,</li>
+                    <li>Mettre en place une structure de navigation pour un site web,</li>
+                    <li>Assurer la cohérence graphique d'un site web,</li>
+                </ul>
+                <p>Avec le projet Oh My Food, j'ai validé les compétences suivantes :</p>
+                <ul>
+                    <li>Mettre en œuvre des effets CSS graphiques avancés,</li>
+                    <li>Mettre en place une structure de navigation pour un site web,</li>
+                    <li>Assurer la cohérence graphique d'un site web.</li>
+                </ul>
+                <p>Avec le projet Oh My Food, j'ai validé les compétences suivantes :</p>
+                <ul>
+                    <li>Optimiser la taille et la vitesse d’un site web,</li>
+                    <li>Écrire un code HTML et CSS maintenable,</li>
+                    <li>Réaliser une recherche des bonnes pratiques en développement web,</li>
+                    <li>Optimiser le référencement d'un site web</li>
+                    <li>Assurer l'accessibilité d'un site web.</li>
+                </ul>
             </article>
 
             <!-- Contact -->
             <article id="article-contact" class="intro overlay overlay-content">
                 <h2 class="major">Recrutez-moi</h2>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeArticleFour()">&times;</a>
-                <form method="post" action="#">
+                <form method="post" action="mailto:nathalie.barruel@outlook.fr">
                     <div class="fields">
                         <div class="field half">
-                            <label for="name">Name</label>
+                            <label for="name">Nom:</label>
                             <input type="text" name="name" id="name" />
                         </div>
                         <div class="field half">
-                            <label for="email">Email</label>
+                            <label for="lastname">Prénom</label>
+                            <input type="text" name="lastname" id="lastname" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email:</label>
                             <input type="text" name="email" id="email" />
                         </div>
                         <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message"></textarea>
                         </div>
                     </div>
-                    <input type="submit" value="Send Message" class="primary" />
-                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Send Message" class="primary button" />
+                    <input type="reset" value="Reset" class="button secondary" />
                 </form>
             </article>
         </div>
         <footer>
             <div id="copyright">© Nathalie Barruel </div>
             <a href="https://github.com/nathbrl"><i class="fab fa-github"></i><span class="text-icon">GitHub</span></a>
-            <a href="https://www.linkedin.com/in/nathalie-barruel/"><i class="fab fa-linkedin"></i><span class="text-icon">LinkedIn</span></a>
+            <a href="https://www.linkedin.com/in/nathalie-barruel/"><i class="fab fa-linkedin"></i><span
+                    class="text-icon">LinkedIn</span></a>
         </footer>
     </div>
     <script src="index.js"></script>

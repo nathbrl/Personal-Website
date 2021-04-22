@@ -1,0 +1,245 @@
+body, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background: linear-gradient(-45deg, #341149, peachpuff, #2905D4, #DFADFD);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: 'Arima Madurai', cursive;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#container{
+    margin: 7em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    border-radius: 30px;
+    width: 50%;
+    margin: 4em auto;
+    color: black;
+}
+#photo{
+    margin: 20px auto;
+    border: solid 1px rgb(126, 121, 116);
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+}
+.menu-btn{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #DFADFD;
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+}
+.menu-btn::before, .menu-btn::after {
+    position: absolute;
+    z-index: -1;
+    transition: 1s;
+    content: '';
+}
+.menu-btn::before {
+    height: 50px;
+    width: 130px;
+}
+.menu-btn::after {
+    width: 150px;
+    height: 30px;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.menu-btn:hover::before {
+    width: 0px;
+    background: #fff;
+}
+.menu-btn:hover::after {
+    height: 0px;
+    background: #fff;
+}
+p{
+    font-size: 26px;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.menu-btn:hover{
+    border-radius: 3em;
+    border: 1px solid #DFADFD;
+    color: #2905D4;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul li:before{
+    content: "✓";
+    padding-right: 10px;
+}
+#main{
+    margin-top: 40px;
+}
+article p{
+    font-size: 17px;
+    width: 90%;
+    margin: auto;
+}
+img.banner-image{
+    width: 100%;
+    margin: 20px auto;
+}
+h1, h2, h3, h4, h5{
+    text-transform: uppercase;
+}
+.major{
+    color: whitesmoke;
+    background-color: rgba(52, 17, 73, 0.7);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+article a{
+    text-align: center;
+}
+.overlay {
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2905D4;
+    display: block;
+    transition: 0.3s;
+}
+span:hover{
+    border-bottom: solid 2px #DFADFD;
+}
+article i {
+    font-size: 20px;
+}
+article .fa-html5{
+    color: red;
+}
+article .fa-css3-alt{
+    color: royalblue;
+}
+article .fa-js{
+    color: yellow;
+    background-color: black;
+}
+article .fa-sass{
+    color: palevioletred;
+}
+#article-intro, #article-work, #article-skills{
+    text-align: justify;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 40px;
+    font-weight: bold;
+}
+form, input{
+    text-align: center;
+    font-family: 'Arima Madurai', cursive;
+    padding: 10px;
+}
+input{
+    margin: 20px 10px 0 0;
+}
+.fields{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+input#email, input#name{
+    width: 240px;
+}
+input.button{
+    display: inline;
+}
+input.primary{
+    background-color: lightgreen;
+    color: black;
+}
+input.secondary{
+    background-color: red;
+    color: whitesmoke;
+    width: 108.25px;
+}
+textarea{
+    width: 540px;
+    height: 200px;
+    margin-top: 20px;
+}
+footer{
+    display: flex;
+    margin: 20px;
+    padding-left: 15px;
+    justify-content: space-evenly;
+    color: whitesmoke;
+}
+.text-icon{
+    color: whitesmoke;
+    padding-left: 8px;
+}
