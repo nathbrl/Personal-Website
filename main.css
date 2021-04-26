@@ -61,28 +61,6 @@ body, html{
     z-index: 0;
     transition: 1s;
 }
-.menu-btn::before, .menu-btn::after {
-    position: absolute;
-    z-index: -1;
-    transition: 1s;
-    content: '';
-}
-.menu-btn::before {
-    height: 50px;
-    width: 130px;
-}
-.menu-btn::after {
-    width: 150px;
-    height: 30px;
-}
-.noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 .menu-btn:hover::before {
     width: 0px;
     background: #fff;
@@ -115,9 +93,6 @@ ul li:before{
     content: "✓";
     padding-right: 10px;
 }
-#main{
-    margin-top: 40px;
-}
 article p{
     font-size: 17px;
     width: 90%;
@@ -142,6 +117,7 @@ h1, h2, h3, h4, h5{
 article a{
     text-align: center;
 }
+/* OVERLAY */
 .overlay {
     width: 50%;
     position: fixed;
@@ -167,12 +143,13 @@ article a{
     text-decoration: none;
     font-size: 20px;
     color: #2905D4;
-    display: block;
+    display: inline;
     transition: 0.3s;
 }
 span:hover{
     border-bottom: solid 2px #DFADFD;
 }
+/* ICONS */
 article i {
     font-size: 20px;
 }
@@ -195,10 +172,12 @@ article .fa-sass{
 .overlay .closebtn {
     position: absolute;
     top: 0px;
-    right: 5px;
+    right: 45px;
     font-size: 40px;
     font-weight: bold;
+    color: whitesmoke;
 }
+/* FORM */
 form, input{
     text-align: center;
     font-family: 'Arima Madurai', cursive;
@@ -206,6 +185,7 @@ form, input{
 }
 input{
     margin: 20px 10px 0 0;
+    outline: none;
 }
 .fields{
     display: flex;
@@ -221,17 +201,19 @@ input.button{
 input.primary{
     background-color: lightgreen;
     color: black;
+    margin-bottom: 5px;
 }
 input.secondary{
     background-color: red;
     color: whitesmoke;
-    width: 108.25px;
+    margin-bottom: 5px;
 }
 textarea{
     width: 540px;
     height: 200px;
     margin-top: 20px;
 }
+/* FOOTER */
 footer{
     display: flex;
     margin: 20px;
@@ -242,4 +224,73 @@ footer{
 .text-icon{
     color: whitesmoke;
     padding-left: 8px;
+}
+/* MEDIA MOBILE*/
+@media  screen and (min-width: 320px) and (max-width: 667px) {
+    #container {
+        margin: 2em 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .intro {
+        min-width: 320px;
+        width: 350px;
+        margin: 1em auto;
+    }
+    #photo {
+        width: 160px;
+        height: 160px;
+    }
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+    #menu {
+        flex-direction: column;
+        margin-bottom: 8px;
+        align-items: center;
+    }
+    footer {
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+    }
+    .overlay-content {
+        min-width: 320px;
+        margin-bottom: 30px;
+    }
+    .overlay .closebtn{
+        right: 12px;
+    }
+    .major {
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+    article  {
+        font-size: 16px;
+        text-align: center;
+    }
+    ul {
+        padding: 20px;
+        text-align: center;
+    }
+    .overlay a {
+        font-size: 18px;
+    }
+    form, input {
+        padding: 5px;
+    }
+    textarea {
+        width: inherit;
+        font-size: 14px;
+    }
+}
+/* MEDIA TABLET */
+@media  screen and (min-width: 668px) and (max-width: 1023px) {
+    .intro {
+        width: 90%;
+    }
+    .overlay .closebtn {
+        right: 35px;
+    }
 }
