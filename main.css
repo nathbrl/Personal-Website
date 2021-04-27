@@ -96,7 +96,7 @@ ul li:before{
 article p{
     font-size: 17px;
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
 }
 img.banner-image{
     width: 100%;
@@ -108,13 +108,11 @@ h1, h2, h3, h4, h5{
 .major{
     color: whitesmoke;
     background-color: rgba(52, 17, 73, 0.7);
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-bottom: 20px;
+    border-radius: 30px;
     margin-top: 20px;
-    text-align: center;
-}
-article a{
     text-align: center;
 }
 /* OVERLAY */
@@ -136,10 +134,17 @@ article a{
     width: 50%;
     height: auto;
     text-align: center;
-    margin-top: 30px;
 }
-.overlay a {
+.overlay .cv-link{
     padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2905D4;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+.projets{
     text-decoration: none;
     font-size: 20px;
     color: #2905D4;
@@ -156,7 +161,7 @@ article i {
 article .fa-html5{
     color: red;
 }
-article .fa-css3-alt{
+article .fa-css3-alt, i.fab.fa-linkedin{
     color: royalblue;
 }
 article .fa-js{
@@ -167,62 +172,63 @@ article .fa-sass{
     color: palevioletred;
 }
 #article-intro, #article-work, #article-skills{
-    text-align: justify;
+    text-align: left;
 }
 .overlay .closebtn {
     position: absolute;
-    top: 0px;
+    top: 10px;
     right: 45px;
     font-size: 40px;
     font-weight: bold;
     color: whitesmoke;
 }
 /* FORM */
-form, input{
-    text-align: center;
+form, input, ::placeholder{
     font-family: 'Arima Madurai', cursive;
-    padding: 10px;
 }
-input{
-    margin: 20px 10px 0 0;
-    outline: none;
+label, input textarea {
+    text-align: left;
+    display: inline-block;
+    width: 90px;
+    margin-bottom: 10px;
 }
 .fields{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 90%;
 }
-input#email, input#name{
+input#email, input#name, input#lastname, textarea{
     width: 240px;
 }
 input.button{
     display: inline;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    margin-left: 15px;
 }
 input.primary{
-    background-color: lightgreen;
-    color: black;
-    margin-bottom: 5px;
+    color: #341149;
+    border: solid 1px #341149;
 }
 input.secondary{
-    background-color: red;
+    background-color: #341149;
     color: whitesmoke;
-    margin-bottom: 5px;
-}
-textarea{
-    width: 540px;
-    height: 200px;
-    margin-top: 20px;
+    border: solid 1px #fff;
 }
 /* FOOTER */
 footer{
     display: flex;
-    margin: 20px;
-    padding-left: 15px;
+    margin: 10px auto;
+    padding: 6px;
     justify-content: space-evenly;
-    color: whitesmoke;
+    text-align: center;
+    color: black;
+    background-color: white;
+    width: 50%;
+    border-radius: 30px;
 }
 .text-icon{
-    color: whitesmoke;
+    color: black;
     padding-left: 8px;
 }
 /* MEDIA MOBILE*/
@@ -254,6 +260,7 @@ footer{
         margin: 0;
         padding: 0;
         justify-content: space-around;
+        background-color: white;
     }
     .overlay-content {
         min-width: 320px;
