@@ -238,7 +238,7 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    .intro {
+    .intro, footer {
         min-width: 320px;
         width: 350px;
         margin: 1em auto;
@@ -257,8 +257,6 @@ footer{
         align-items: center;
     }
     footer {
-        margin: 0;
-        padding: 0;
         justify-content: space-around;
         background-color: white;
     }
@@ -294,7 +292,7 @@ footer{
 }
 /* MEDIA TABLET */
 @media  screen and (min-width: 668px) and (max-width: 1023px) {
-    .intro {
+    .intro, footer {
         width: 90%;
     }
     .overlay .closebtn {
