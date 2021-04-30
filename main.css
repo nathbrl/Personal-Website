@@ -182,39 +182,6 @@ article .fa-sass{
     font-weight: bold;
     color: whitesmoke;
 }
-/* FORM */
-form, input, ::placeholder{
-    font-family: 'Arima Madurai', cursive;
-}
-label, input textarea {
-    text-align: left;
-    display: inline-block;
-    width: 90px;
-    margin-bottom: 10px;
-}
-.fields{
-    width: 90%;
-}
-input#email, input#name, input#lastname, textarea{
-    width: 240px;
-}
-input.button{
-    display: inline;
-    color: black;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 5px;
-    margin-left: 15px;
-}
-input.primary{
-    color: #341149;
-    border: solid 1px #341149;
-}
-input.secondary{
-    background-color: #341149;
-    color: whitesmoke;
-    border: solid 1px #fff;
-}
 /* FOOTER */
 footer{
     display: flex;
@@ -265,7 +232,8 @@ footer{
         margin-bottom: 30px;
     }
     .overlay .closebtn{
-        right: 12px;
+        top: 6px;
+        right: 20px;
     }
     .major {
         margin-bottom: 0;
@@ -281,13 +249,6 @@ footer{
     }
     .overlay a {
         font-size: 18px;
-    }
-    form, input {
-        padding: 5px;
-    }
-    textarea {
-        width: inherit;
-        font-size: 14px;
     }
 }
 /* MEDIA TABLET */
